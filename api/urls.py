@@ -1,6 +1,7 @@
-from django.urls import path
+from django.conf import settings
+from django.urls import include, path
 from . import views
 
 urlpatterns = [
-    path('hello/', views.say_hello)
+    path('hello/', views.say_hello),
 ]
